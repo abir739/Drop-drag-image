@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop Image Uploader</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="Uploader-box">
+        <label for="input-file" id="drop-area" role="button" aria-haspopup="true" aria-controls="img-view">
+            <p>Drag and drop or click here<br>to upload image</p>
+            <input type="file" accept="image/*" id="input-file" hidden>
+            <div id="img-view" role="img" aria-live="polite" aria-atomic="true">
+                <img src="icon.png" alt="Preview Image">
+                <span aria-hidden="true">Upload any images from your desktop</span>
+            </div>
+        </label>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
